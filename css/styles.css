@@ -53,7 +53,7 @@ img {
 /* header */
 
 .container {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     max-width: 100%;
     width: 1400px;
     padding-left: 15px;
@@ -66,9 +66,9 @@ img {
     justify-content: space-between;
     padding-top: 18px;
     padding-bottom: 18px;
+    align-items: center;
     background: #FFF;
         box-shadow: 0px 4px 40px 0px rgba(51, 51, 51, 0.08);
-    align-items: center;
 }
 
 .header-logo {
@@ -129,16 +129,6 @@ img {
         padding: 202px 20px 204px 10px;
 }
 
-/* .hero-container{
-        background-image: linear-gradient(0deg,
-            rgba(17, 51, 117, 0.50) 0%,
-            rgba(17, 51, 117, 0.50) 100%), url(../images/Img.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            padding: 202px 20px 204px 10px;
-} */
-
 .hero-title{
     color: var(--White, #FFF);
     font-size: 60px;
@@ -198,9 +188,6 @@ img {
     margin: 0 auto;
 }
 
-
-
-
 .offerings-btn{
     color: var(--Secondary);
     font-size: 16px;
@@ -220,7 +207,27 @@ img {
     cursor: pointer;
 }
 
+.offerings-list{
+    display: flex;
+    gap: 20px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.offerings-list-item{
+    width: calc((100% - 48px) / 3);
+}
+.offerings-list-item img{
+    width: 400px;
+    height: 400px;
+}
 /* investors */
+.investors-container{
+    display: flex;
+    gap: 90px;
+}
 
 .investors-title{
     color: var(--grey-1, #333);
@@ -246,7 +253,10 @@ img {
     padding-bottom: 180px;
 }
 
-.capital-container {}
+.capital-container {
+    gap: 90px;
+    display: flex;
+}
 
 
 .capital-title {
@@ -305,14 +315,71 @@ img {
     margin-left: 130px;
 }
 
-.footer-services {}
+.footer-nav-item:not(:last-child){
+        margin-bottom: 16px;
+}
+.footer-nav-item:first-child{
+    color: var(--grey-1, #333);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+}
+.footer-nav-text{
+    max-width: 100%;
+    width: 270px;
+    margin-right: 30px;
+}
 
-.footer-services-text {}
+/* how it works */
 
-.footer-services-item {}
 
-.footer-about {}
 
-.footer-about-text {}
+.crypto-container img{
+    margin: 0 auto;
+}
 
-.footer-about-item {}
+.crypto-title {
+    color: var(--grey-1, #333);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.33;
+    margin-top: 40px;
+}
+
+.cryptocurrencie {
+    color: var(--grey-1, #333);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.44px;
+    margin-bottom: 40px;
+}
+
+.crypto-text {
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.33;
+    margin-bottom: 50px;
+}
+
+/* kolom */
+div .kolom-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.kolom-title{
+    color: #333;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.33;
+
+}
+.meme-container img{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
